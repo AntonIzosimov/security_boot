@@ -33,7 +33,7 @@ public class User implements UserDetails {
     private int age;
 
     @Column(name = "eMail")
-    private String eMail;
+    private String email;
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinTable(name = "users_roles",
@@ -65,5 +65,13 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public String rolesToString() {
+        StringBuilder sb = new StringBuilder();
+        for (Role role : roles) {
+            sb.append(role.getName()).append(" ");
+        }
+        return sb.toString();
     }
 }

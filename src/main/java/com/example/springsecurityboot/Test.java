@@ -43,7 +43,7 @@ public class Test {
         User user = new User();
         user.setUsername("Nadya");
         user.setLastname("Evseeva");
-        user.setEMail("@google.com");
+        user.setEmail("@google.com");
         user.setAge((byte) 27);
         user.setPassword(new BCryptPasswordEncoder().encode("100"));
         user.setRoles(adminSet);
@@ -51,7 +51,7 @@ public class Test {
         User user2 = new User();
         user2.setUsername("Nastya");
         user2.setLastname("Korneeva");
-        user2.setEMail("@yahoo.com");
+        user2.setEmail("@yahoo.com");
         user2.setAge((byte) 25);
         user2.setPassword(new BCryptPasswordEncoder().encode("100"));
         user2.setRoles(userSet);
