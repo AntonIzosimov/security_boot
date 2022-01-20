@@ -7,7 +7,6 @@ import com.example.springsecurityboot.repositories.UserRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 
-
 import javax.annotation.PostConstruct;
 import java.util.HashSet;
 import java.util.Set;
@@ -43,7 +42,7 @@ public class Test {
         User user = new User();
         user.setUsername("Nadya");
         user.setLastname("Evseeva");
-        user.setEmail("@google.com");
+        user.setEmail("123@google.com");
         user.setAge((byte) 27);
         user.setPassword(new BCryptPasswordEncoder().encode("100"));
         user.setRoles(adminSet);
@@ -51,7 +50,7 @@ public class Test {
         User user2 = new User();
         user2.setUsername("Nastya");
         user2.setLastname("Korneeva");
-        user2.setEmail("@yahoo.com");
+        user2.setEmail("123@yahoo.com");
         user2.setAge((byte) 25);
         user2.setPassword(new BCryptPasswordEncoder().encode("100"));
         user2.setRoles(userSet);

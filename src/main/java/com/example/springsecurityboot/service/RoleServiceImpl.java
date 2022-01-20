@@ -3,7 +3,6 @@ package com.example.springsecurityboot.service;
 import com.example.springsecurityboot.models.Role;
 import com.example.springsecurityboot.repositories.RoleRepository;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service

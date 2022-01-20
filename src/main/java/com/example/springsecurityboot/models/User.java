@@ -32,7 +32,7 @@ public class User implements UserDetails {
     @Column(name = "age")
     private int age;
 
-    @Column(name = "eMail")
+    @Column(name = "email")
     private String email;
 
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
